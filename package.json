@@ -6,10 +6,11 @@
   "type": "module",
 
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "node index.js --watch"
   },
 
   "dependencies": {
+    "nodemon": "3.0.1",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "mongoose": "^6.3.1",

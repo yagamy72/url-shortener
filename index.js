@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
 
-mongoose.connect(process.env.MONGO_DB_URI, (err) => {
+mongoose.connect('mongodb://localhost:27017/local', (err) => {
   if (err) {
     throw err;
   }
